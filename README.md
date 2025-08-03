@@ -116,13 +116,15 @@ The complete pipeline involves:
 2. **Model Training**: Using the masked examples to train a transformer-based model to predict the next letter to guess.
 3. **Self-Play**: Improving the model through additional rounds of training based on games the model plays against itself.
 
-### Model Architecture
+### Model Architecture and Performance
 
 The model is based on a transformer architecture that takes in the current state of the word (with masked characters) and previously guessed letters to predict the next best letter to guess.
 
 For the first guess, the system uses letter frequency statistics derived from the training dictionary. For subsequent guesses, it uses the neural network model.
 
 The model is trained using a combination of cross-entropy loss and cosine similarity.
+
+**Performance**: The best model achieves a tested accuracy of 63% on unseen test data with a limit of 6 incorrect guesses. This means the AI can successfully guess the complete word before running out of attempts in nearly two-thirds of cases, significantly outperforming random guessing strategies.
 
 ## Improving the Model
 
