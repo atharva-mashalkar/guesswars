@@ -3,6 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+masked_training_set_new1.txt
+masked_training_set_new2.txt
+masked_training_set_new3.txt
+masked_training_set_new4.txt
+
+hangman_env/
+*.ipynb
+
 # C extensions
 *.so
 
